@@ -1,0 +1,67 @@
+.mobail-navigation {
+display: none;
+position: absolute;
+top: 55px;
+right: 30px;
+}
+
+.mobail-navigation-burger {
+width: 33px;
+height: 20px;
+cursor: pointer;
+}
+
+.mobail-navigation-toggler{
+    display: none;
+}
+
+.mobail-navigation-menu {
+    position: fixed;
+    /* top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; */
+    inset: 0;
+    padding: 55px 20px 0;
+    background-color: var(--bg-main);
+    translate: 100% 0;
+    transition: all 0.33s;
+
+}
+
+.mobail-navigation-toggler:checked + .mobail-navigation-menu{
+    translate: 0;
+}
+
+.mobail-navigation-list {
+display: flex;
+flex-direction: column;
+row-gap: 20px;
+}
+
+.mobail-navigation-link {
+font-size: 34px;
+font-weight: 700;
+color: var(--font-color-grey);
+}
+
+
+
+.mobail-navigation-close {
+position: absolute;
+top: 55px;
+right: 30px;
+}
+
+.mobail-navigation-cross {
+    width: 23px;
+    height: 23px;
+cursor: pointer;
+}
+
+
+@media (max-width:480px) {
+    .mobail-navigation {
+        display: block;
+        }
+}

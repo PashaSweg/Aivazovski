@@ -1,6 +1,9 @@
 *{
 box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body{
 margin: 0;
@@ -19,7 +22,7 @@ text-decoration: none;
 color: unset;
 }
 
-h1, p {
+h1, p, h2 {
     margin: 0;
 }
 
